@@ -1,0 +1,13 @@
+{
+    "epochs": 10,
+    "batchsize": 2,
+    "model": "MLP1",
+    "optimizer": "Adam",
+    "load_parameters": "false",
+    
+    "dataset_name": "example",
+    "n_positive_data": 20,
+    "n_negative_data": 20,
+    "n_parameters": 1,
+    "n_train_data": 15
+}
