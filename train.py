@@ -19,6 +19,11 @@ if __name__ == '__main__':
     # Create a new model
     model = L.Classifier(import_model(parameters['model']))
 
+    # Activate GPU if needed
+    if parameters['gpu'] >= 0:
+        chainer.cuda.get_device_from_id(parameters['gpu']).use()
+        model.to_gpu() 
+        
     # Load the parameter of the model if already saved
     if parameters['load_parameters']=="true":
         a=5

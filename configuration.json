@@ -4,6 +4,7 @@
     "model": "MLP1",
     "optimizer": "Adam",
     "load_parameters": "false",
+    "gpu" : 0,
     
     "dataset_name": "example",
     "n_positive_data": 20,
